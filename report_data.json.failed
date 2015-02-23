@@ -1,0 +1,1636 @@
+{
+    "all_resources": [
+        {
+            "instance_vars": {
+                "action": [
+                    "nothing"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "create",
+                    "delete",
+                    "create",
+                    "create_if_missing",
+                    "delete"
+                ],
+                "before": null,
+                "cookbook": null,
+                "cookbook_name": "chef_handler",
+                "delete": false,
+                "elapsed_time": 0.000257598,
+                "files_backup": 5,
+                "files_group": null,
+                "files_mode": 420,
+                "files_owner": null,
+                "group": "root",
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "mode": "0755",
+                "name": "/tmp/kitchen/handlers",
+                "noop": null,
+                "overwrite": true,
+                "owner": "root",
+                "params": {},
+                "path": "/tmp/kitchen/handlers",
+                "provider": "Chef::Provider::RemoteDirectory",
+                "purge": false,
+                "recipe_name": "default",
+                "recursive": true,
+                "resource_name": "remote_directory",
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "handlers",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler/recipes/default.rb:23:in `from_file'",
+                "supports": {},
+                "updated": true,
+                "updated_by_last_action": false
+            },
+            "json_class": "Chef::Resource::RemoteDirectory"
+        },
+        {
+            "instance_vars": {
+                "action": [
+                    "install"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "install",
+                    "upgrade",
+                    "remove",
+                    "purge",
+                    "reconfig"
+                ],
+                "before": null,
+                "candidate_version": null,
+                "cookbook_name": "chef_handler_example",
+                "elapsed_time": 0.019543914,
+                "gem_binary": "/opt/chef/embedded/bin/gem",
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "name": "chef-handler-example",
+                "noop": null,
+                "options": null,
+                "package_name": "chef-handler-example",
+                "params": {},
+                "provider": "Chef::Provider::Package::Rubygems",
+                "recipe_name": "default",
+                "resource_name": "chef_gem",
+                "response_file": null,
+                "response_file_variables": {},
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "/tmp/shared/chef-handler-example-0.0.1.gem",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler_example/recipes/default.rb:12:in `from_file'",
+                "supports": {},
+                "timeout": 900,
+                "updated": true,
+                "updated_by_last_action": false,
+                "version": "0.0.1"
+            },
+            "json_class": "Chef::Resource::ChefGem"
+        },
+        {
+            "instance_vars": {
+                "action": [
+                    "enable"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "enable",
+                    "disable"
+                ],
+                "arguments": [],
+                "before": null,
+                "class_name": "Chef::Handler::example",
+                "cookbook_name": "chef_handler_example",
+                "elapsed_time": 0.020074013,
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "name": "Chef::Handler::example",
+                "noop": null,
+                "params": {},
+                "provider": null,
+                "recipe_name": "default",
+                "resource_name": "chef_handler",
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "chef/handler/example.rb",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler_example/recipes/default.rb:23:in `from_file'",
+                "supports": {
+                    "exception": true,
+                    "report": true
+                },
+                "updated": true,
+                "updated_by_last_action": true
+            },
+            "json_class": "Chef::Resource::ChefHandler"
+        },
+        {
+            "instance_vars": {
+                "action": "create",
+                "allowed_actions": [
+                    "nothing",
+                    "create",
+                    "delete",
+                    "touch",
+                    "create_if_missing"
+                ],
+                "atomic_update": true,
+                "backup": 5,
+                "before": null,
+                "cookbook": null,
+                "cookbook_name": "chef_handler_example",
+                "diff": null,
+                "elapsed_time": 0.001585065,
+                "force_unlink": false,
+                "group": null,
+                "guard_interpreter": "default",
+                "helper_modules": [],
+                "ignore_failure": false,
+                "inline_helper_blocks": {},
+                "inline_helper_modules": [],
+                "local": false,
+                "manage_symlink_source": null,
+                "name": "adasd",
+                "noop": null,
+                "owner": null,
+                "params": {},
+                "path": "adasd",
+                "provider": "Chef::Provider::Template",
+                "recipe_name": "default",
+                "resource_name": "template",
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "adasd.erb",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler_example/recipes/default.rb:30:in `from_file'",
+                "supports": {},
+                "updated": false,
+                "updated_by_last_action": false,
+                "variables": {}
+            },
+            "json_class": "Chef::Resource::Template"
+        }
+    ],
+    "backtrace": [
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/cookbook_version.rb:319:in `preferred_manifest_record'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/cookbook_version.rb:327:in `preferred_filename_on_disk_location'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/provider/template_finder.rb:40:in `find'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/provider/template/content.rb:32:in `template_location'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/provider/template.rb:49:in `block in define_resource_requirements'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/mixin/why_run.rb:315:in `assert'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/provider/template.rb:47:in `define_resource_requirements'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/provider.rb:110:in `run_action'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource.rb:648:in `run_action'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/runner.rb:49:in `run_action'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/runner.rb:81:in `block (2 levels) in converge'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/runner.rb:81:in `each'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/runner.rb:81:in `block in converge'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection.rb:98:in `block in execute_each_resource'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection/stepable_iterato       r.rb:55:in `each_with_index'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/resource_collection.rb:96:in `execute_each_resource'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/runner.rb:80:in `converge'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/client.rb:345:in `converge'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/client.rb:431:in `do_run'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/client.rb:213:in `block in run'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/client.rb:207:in `fork'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/client.rb:207:in `run'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/application.rb:236:in `run_chef_client'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/application/client.rb:338:in `block in run_application'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/application/client.rb:327:in `loop'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/application/client.rb:327:in `run_application'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib/chef/application.rb:55:in `run'",
+        "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/bin/chef-client:26:in `<top (required)>'",
+        "/usr/bin/chef-client:23:in `load'",
+        "/usr/bin/chef-client:23:in `<main>'"
+    ],
+    "elapsed_time": 0.649364286,
+    "end_time": "2015-02-09 21:04:42 +0000",
+    "exception": "Chef::Exceptions::FileNotFound: template[adasd] (chef_handler_example::default line 30) had an error: Chef::Exceptions::FileNotFound: Cookbook 'chef_handler_example' (0.1.0) does not contain a file at any of these locations:\n  templates/centos-6.6/adasd.erb\n  templates/centos/adasd.erb\n  templates/default/adasd.erb",
+    "node": {
+        "automatic": {
+            "block_device": {
+                "dm-0": {
+                    "removable": "0",
+                    "size": "78856192"
+                },
+                "dm-1": {
+                    "removable": "0",
+                    "size": "2031616"
+                },
+                "loop0": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop1": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop2": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop3": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop4": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop5": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop6": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "loop7": {
+                    "removable": "0",
+                    "size": "0"
+                },
+                "ram0": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram1": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram10": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram11": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram12": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram13": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram14": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram15": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram2": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram3": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram4": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram5": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram6": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram7": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram8": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "ram9": {
+                    "removable": "0",
+                    "size": "32768"
+                },
+                "sda": {
+                    "model": "VBOX HARDDISK",
+                    "removable": "0",
+                    "rev": "1.0",
+                    "size": "81920000",
+                    "state": "running",
+                    "timeout": "30",
+                    "vendor": "ATA"
+                }
+            },
+            "chef_packages": {
+                "chef": {
+                    "chef_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.16.4/lib",
+                    "version": "11.16.4"
+                },
+                "ohai": {
+                    "ohai_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/ohai-7.4.0/lib/ohai",
+                    "version": "7.4.0"
+                }
+            },
+            "cloud_v2": null,
+            "command": {
+                "ps": "ps -ef"
+            },
+            "counters": {
+                "network": {
+                    "interfaces": {
+                        "eth0": {
+                            "rx": {
+                                "bytes": "167855",
+                                "drop": "0",
+                                "errors": "0",
+                                "overrun": "0",
+                                "packets": "1003"
+                            },
+                            "tx": {
+                                "bytes": "78402",
+                                "carrier": "0",
+                                "collisions": "0",
+                                "drop": "0",
+                                "errors": "0",
+                                "packets": "591",
+                                "queuelen": "1000"
+                            }
+                        },
+                        "lo": {
+                            "rx": {
+                                "bytes": "0",
+                                "drop": "0",
+                                "errors": "0",
+                                "overrun": "0",
+                                "packets": "0"
+                            },
+                            "tx": {
+                                "bytes": "0",
+                                "carrier": "0",
+                                "collisions": "0",
+                                "drop": "0",
+                                "errors": "0",
+                                "packets": "0"
+                            }
+                        }
+                    }
+                }
+            },
+            "cpu": {
+                "0": {
+                    "cache_size": "6144 KB",
+                    "core_id": "0",
+                    "cores": "1",
+                    "family": "6",
+                    "flags": [
+                        "fpu",
+                        "vme",
+                        "de",
+                        "pse",
+                        "tsc",
+                        "msr",
+                        "pae",
+                        "mce",
+                        "cx8",
+                        "apic",
+                        "sep",
+                        "mtrr",
+                        "pge",
+                        "mca",
+                        "cmov",
+                        "pat",
+                        "pse36",
+                        "clflush",
+                        "mmx",
+                        "fxsr",
+                        "sse",
+                        "sse2",
+                        "syscall",
+                        "nx",
+                        "rdtscp",
+                        "lm",
+                        "constant_tsc",
+                        "up",
+                        "rep_good",
+                        "pni",
+                        "monitor",
+                        "ssse3",
+                        "lahf_lm"
+                    ],
+                    "mhz": "2649.623",
+                    "model": "70",
+                    "model_name": "Intel(R) Core(TM) i7-4960HQ CPU @ 2.60GHz",
+                    "physical_id": "0",
+                    "stepping": "1",
+                    "vendor_id": "GenuineIntel"
+                },
+                "real": 1,
+                "total": 1
+            },
+            "current_user": "vagrant",
+            "dmi": {
+                "base_board": {
+                    "all_records": [
+                        {
+                            "Asset Tag": "Not Specified",
+                            "Chassis Handle": "0x0003",
+                            "Contained Object Handles": "0",
+                            "Features": {
+                                "Board is a hosting board": null
+                            },
+                            "Location In Chassis": "Not Specified",
+                            "Manufacturer": "Oracle Corporation",
+                            "Product Name": "VirtualBox",
+                            "Serial Number": "0",
+                            "Type": "Motherboard",
+                            "Version": "1.2",
+                            "application_identifier": "Base Board Information",
+                            "record_id": "0x0008",
+                            "size": "2"
+                        }
+                    ],
+                    "asset_tag": "Not Specified",
+                    "chassis_handle": "0x0003",
+                    "contained_object_handles": "0",
+                    "location_in_chassis": "Not Specified",
+                    "manufacturer": "Oracle Corporation",
+                    "product_name": "VirtualBox",
+                    "serial_number": "0",
+                    "type": "Motherboard",
+                    "version": "1.2"
+                },
+                "bios": {
+                    "address": "0xE0000",
+                    "all_records": [
+                        {
+                            "Address": "0xE0000",
+                            "Characteristics": {
+                                "8042 keyboard services are supported (int 9h)": null,
+                                "ACPI is supported": null,
+                                "Boot from CD is supported": null,
+                                "CGA/mono video services are supported (int 10h)": null,
+                                "ISA is supported": null,
+                                "PCI is supported": null,
+                                "Selectable boot is supported": null
+                            },
+                            "ROM Size": "128 kB",
+                            "Release Date": "12/01/2006",
+                            "Runtime Size": "128 kB",
+                            "Vendor": "innotek GmbH",
+                            "Version": "VirtualBox",
+                            "application_identifier": "BIOS Information",
+                            "record_id": "0x0000",
+                            "size": "0"
+                        }
+                    ],
+                    "release_date": "12/01/2006",
+                    "rom_size": "128 kB",
+                    "runtime_size": "128 kB",
+                    "vendor": "innotek GmbH",
+                    "version": "VirtualBox"
+                },
+                "chassis": {
+                    "all_records": [
+                        {
+                            "Asset Tag": "Not Specified",
+                            "Boot-up State": "Safe",
+                            "Lock": "Not Present",
+                            "Manufacturer": "Oracle Corporation",
+                            "Power Supply State": "Safe",
+                            "Security Status": "None",
+                            "Serial Number": "Not Specified",
+                            "Thermal State": "Safe",
+                            "Type": "Other",
+                            "Version": "Not Specified",
+                            "application_identifier": "Inactive",
+                            "record_id": "0x0003",
+                            "size": "3"
+                        }
+                    ],
+                    "asset_tag": "Not Specified",
+                    "boot_up_state": "Safe",
+                    "lock": "Not Present",
+                    "manufacturer": "Oracle Corporation",
+                    "power_supply_state": "Safe",
+                    "security_status": "None",
+                    "serial_number": "Not Specified",
+                    "thermal_state": "Safe",
+                    "type": "Other",
+                    "version": "Not Specified"
+                },
+                "dmidecode_version": "2.12",
+                "oem_strings": {
+                    "all_records": [
+                        {
+                            "Header and Data": {
+                                "80 08 08 00 F3 6A 28 00": null
+                            },
+                            "String 1": "vboxVer_4.3.18",
+                            "String 2": "vboxRev_96516",
+                            "application_identifier": "End Of Table",
+                            "record_id": "0x0002",
+                            "size": "11"
+                        }
+                    ],
+                    "string_1": "vboxVer_4.3.18",
+                    "string_2": "vboxRev_96516"
+                },
+                "smbios_version": "2.5",
+                "structures": {
+                    "count": "10",
+                    "size": "449"
+                },
+                "system": {
+                    "all_records": [
+                        {
+                            "Family": "Virtual Machine",
+                            "Manufacturer": "innotek GmbH",
+                            "Product Name": "VirtualBox",
+                            "SKU Number": "Not Specified",
+                            "Serial Number": "0",
+                            "UUID": "70CB5E06-FF4D-4707-AEC3-27094610D292",
+                            "Version": "1.2",
+                            "Wake-up Type": "Power Switch",
+                            "application_identifier": "System Information",
+                            "record_id": "0x0001",
+                            "size": "1"
+                        }
+                    ],
+                    "family": "Virtual Machine",
+                    "manufacturer": "innotek GmbH",
+                    "product_name": "VirtualBox",
+                    "serial_number": "0",
+                    "sku_number": "Not Specified",
+                    "uuid": "70CB5E06-FF4D-4707-AEC3-27094610D292",
+                    "version": "1.2",
+                    "wake_up_type": "Power Switch"
+                },
+                "table_location": "0x000E1000"
+            },
+            "domain": "vagrantup.com",
+            "etc": {
+                "group": {
+                    "abrt": {
+                        "gid": 173,
+                        "members": []
+                    },
+                    "adm": {
+                        "gid": 4,
+                        "members": [
+                            "adm",
+                            "daemon"
+                        ]
+                    },
+                    "audio": {
+                        "gid": 63,
+                        "members": []
+                    },
+                    "bin": {
+                        "gid": 1,
+                        "members": [
+                            "bin",
+                            "daemon"
+                        ]
+                    },
+                    "cdrom": {
+                        "gid": 11,
+                        "members": []
+                    },
+                    "daemon": {
+                        "gid": 2,
+                        "members": [
+                            "bin",
+                            "daemon"
+                        ]
+                    },
+                    "dbus": {
+                        "gid": 81,
+                        "members": []
+                    },
+                    "dialout": {
+                        "gid": 18,
+                        "members": []
+                    },
+                    "dip": {
+                        "gid": 40,
+                        "members": []
+                    },
+                    "disk": {
+                        "gid": 6,
+                        "members": []
+                    },
+                    "floppy": {
+                        "gid": 19,
+                        "members": []
+                    },
+                    "ftp": {
+                        "gid": 50,
+                        "members": []
+                    },
+                    "games": {
+                        "gid": 20,
+                        "members": []
+                    },
+                    "gopher": {
+                        "gid": 30,
+                        "members": []
+                    },
+                    "haldaemon": {
+                        "gid": 68,
+                        "members": [
+                            "haldaemon"
+                        ]
+                    },
+                    "kmem": {
+                        "gid": 9,
+                        "members": []
+                    },
+                    "lock": {
+                        "gid": 54,
+                        "members": []
+                    },
+                    "lp": {
+                        "gid": 7,
+                        "members": [
+                            "daemon"
+                        ]
+                    },
+                    "mail": {
+                        "gid": 12,
+                        "members": [
+                            "mail",
+                            "postfix"
+                        ]
+                    },
+                    "man": {
+                        "gid": 15,
+                        "members": []
+                    },
+                    "mem": {
+                        "gid": 8,
+                        "members": []
+                    },
+                    "nfsnobody": {
+                        "gid": 65534,
+                        "members": []
+                    },
+                    "nobody": {
+                        "gid": 99,
+                        "members": []
+                    },
+                    "ntp": {
+                        "gid": 38,
+                        "members": []
+                    },
+                    "postdrop": {
+                        "gid": 90,
+                        "members": []
+                    },
+                    "postfix": {
+                        "gid": 89,
+                        "members": []
+                    },
+                    "root": {
+                        "gid": 0,
+                        "members": []
+                    },
+                    "rpc": {
+                        "gid": 32,
+                        "members": []
+                    },
+                    "rpcuser": {
+                        "gid": 29,
+                        "members": []
+                    },
+                    "saslauth": {
+                        "gid": 76,
+                        "members": []
+                    },
+                    "slocate": {
+                        "gid": 21,
+                        "members": []
+                    },
+                    "sshd": {
+                        "gid": 74,
+                        "members": []
+                    },
+                    "stapdev": {
+                        "gid": 158,
+                        "members": []
+                    },
+                    "stapsys": {
+                        "gid": 157,
+                        "members": []
+                    },
+                    "stapusr": {
+                        "gid": 156,
+                        "members": []
+                    },
+                    "sys": {
+                        "gid": 3,
+                        "members": [
+                            "bin",
+                            "adm"
+                        ]
+                    },
+                    "tape": {
+                        "gid": 33,
+                        "members": []
+                    },
+                    "tcpdump": {
+                        "gid": 72,
+                        "members": []
+                    },
+                    "tty": {
+                        "gid": 5,
+                        "members": []
+                    },
+                    "users": {
+                        "gid": 100,
+                        "members": []
+                    },
+                    "utempter": {
+                        "gid": 35,
+                        "members": []
+                    },
+                    "utmp": {
+                        "gid": 22,
+                        "members": []
+                    },
+                    "uucp": {
+                        "gid": 14,
+                        "members": []
+                    },
+                    "vagrant": {
+                        "gid": 500,
+                        "members": []
+                    },
+                    "vboxsf": {
+                        "gid": 499,
+                        "members": []
+                    },
+                    "vcsa": {
+                        "gid": 69,
+                        "members": []
+                    },
+                    "video": {
+                        "gid": 39,
+                        "members": []
+                    },
+                    "wheel": {
+                        "gid": 10,
+                        "members": []
+                    }
+                },
+                "passwd": {
+                    "abrt": {
+                        "dir": "/etc/abrt",
+                        "gecos": "",
+                        "gid": 173,
+                        "shell": "/sbin/nologin",
+                        "uid": 173
+                    },
+                    "adm": {
+                        "dir": "/var/adm",
+                        "gecos": "adm",
+                        "gid": 4,
+                        "shell": "/sbin/nologin",
+                        "uid": 3
+                    },
+                    "bin": {
+                        "dir": "/bin",
+                        "gecos": "bin",
+                        "gid": 1,
+                        "shell": "/sbin/nologin",
+                        "uid": 1
+                    },
+                    "daemon": {
+                        "dir": "/sbin",
+                        "gecos": "daemon",
+                        "gid": 2,
+                        "shell": "/sbin/nologin",
+                        "uid": 2
+                    },
+                    "dbus": {
+                        "dir": "/",
+                        "gecos": "System message bus",
+                        "gid": 81,
+                        "shell": "/sbin/nologin",
+                        "uid": 81
+                    },
+                    "ftp": {
+                        "dir": "/var/ftp",
+                        "gecos": "FTP User",
+                        "gid": 50,
+                        "shell": "/sbin/nologin",
+                        "uid": 14
+                    },
+                    "games": {
+                        "dir": "/usr/games",
+                        "gecos": "games",
+                        "gid": 100,
+                        "shell": "/sbin/nologin",
+                        "uid": 12
+                    },
+                    "gopher": {
+                        "dir": "/var/gopher",
+                        "gecos": "gopher",
+                        "gid": 30,
+                        "shell": "/sbin/nologin",
+                        "uid": 13
+                    },
+                    "haldaemon": {
+                        "dir": "/",
+                        "gecos": "HAL daemon",
+                        "gid": 68,
+                        "shell": "/sbin/nologin",
+                        "uid": 68
+                    },
+                    "halt": {
+                        "dir": "/sbin",
+                        "gecos": "halt",
+                        "gid": 0,
+                        "shell": "/sbin/halt",
+                        "uid": 7
+                    },
+                    "lp": {
+                        "dir": "/var/spool/lpd",
+                        "gecos": "lp",
+                        "gid": 7,
+                        "shell": "/sbin/nologin",
+                        "uid": 4
+                    },
+                    "mail": {
+                        "dir": "/var/spool/mail",
+                        "gecos": "mail",
+                        "gid": 12,
+                        "shell": "/sbin/nologin",
+                        "uid": 8
+                    },
+                    "nfsnobody": {
+                        "dir": "/var/lib/nfs",
+                        "gecos": "Anonymous NFS User",
+                        "gid": 65534,
+                        "shell": "/sbin/nologin",
+                        "uid": 65534
+                    },
+                    "nobody": {
+                        "dir": "/",
+                        "gecos": "Nobody",
+                        "gid": 99,
+                        "shell": "/sbin/nologin",
+                        "uid": 99
+                    },
+                    "ntp": {
+                        "dir": "/etc/ntp",
+                        "gecos": "",
+                        "gid": 38,
+                        "shell": "/sbin/nologin",
+                        "uid": 38
+                    },
+                    "operator": {
+                        "dir": "/root",
+                        "gecos": "operator",
+                        "gid": 0,
+                        "shell": "/sbin/nologin",
+                        "uid": 11
+                    },
+                    "postfix": {
+                        "dir": "/var/spool/postfix",
+                        "gecos": "",
+                        "gid": 89,
+                        "shell": "/sbin/nologin",
+                        "uid": 89
+                    },
+                    "root": {
+                        "dir": "/root",
+                        "gecos": "root",
+                        "gid": 0,
+                        "shell": "/bin/bash",
+                        "uid": 0
+                    },
+                    "rpc": {
+                        "dir": "/var/cache/rpcbind",
+                        "gecos": "Rpcbind Daemon",
+                        "gid": 32,
+                        "shell": "/sbin/nologin",
+                        "uid": 32
+                    },
+                    "rpcuser": {
+                        "dir": "/var/lib/nfs",
+                        "gecos": "RPC Service User",
+                        "gid": 29,
+                        "shell": "/sbin/nologin",
+                        "uid": 29
+                    },
+                    "saslauth": {
+                        "dir": "/var/empty/saslauth",
+                        "gecos": "Saslauthd user",
+                        "gid": 76,
+                        "shell": "/sbin/nologin",
+                        "uid": 499
+                    },
+                    "shutdown": {
+                        "dir": "/sbin",
+                        "gecos": "shutdown",
+                        "gid": 0,
+                        "shell": "/sbin/shutdown",
+                        "uid": 6
+                    },
+                    "sshd": {
+                        "dir": "/var/empty/sshd",
+                        "gecos": "Privilege-separated SSH",
+                        "gid": 74,
+                        "shell": "/sbin/nologin",
+                        "uid": 74
+                    },
+                    "sync": {
+                        "dir": "/sbin",
+                        "gecos": "sync",
+                        "gid": 0,
+                        "shell": "/bin/sync",
+                        "uid": 5
+                    },
+                    "tcpdump": {
+                        "dir": "/",
+                        "gecos": "",
+                        "gid": 72,
+                        "shell": "/sbin/nologin",
+                        "uid": 72
+                    },
+                    "uucp": {
+                        "dir": "/var/spool/uucp",
+                        "gecos": "uucp",
+                        "gid": 14,
+                        "shell": "/sbin/nologin",
+                        "uid": 10
+                    },
+                    "vagrant": {
+                        "dir": "/home/vagrant",
+                        "gecos": "",
+                        "gid": 500,
+                        "shell": "/bin/bash",
+                        "uid": 500
+                    },
+                    "vboxadd": {
+                        "dir": "/var/run/vboxadd",
+                        "gecos": "",
+                        "gid": 1,
+                        "shell": "/bin/false",
+                        "uid": 498
+                    },
+                    "vcsa": {
+                        "dir": "/dev",
+                        "gecos": "virtual console memory owner",
+                        "gid": 69,
+                        "shell": "/sbin/nologin",
+                        "uid": 69
+                    }
+                }
+            },
+            "filesystem": {
+                " ": {
+                    "inodes_available": "2420185",
+                    "inodes_percent_used": "2%",
+                    "inodes_used": "45607",
+                    "mount": "/",
+                    "total_inodes": "2465792"
+                },
+                "/dev/mapper/vg_vagrantcentos-lv_root": {
+                    "fs_type": "ext4",
+                    "kb_available": "35501112",
+                    "kb_size": "38677976",
+                    "kb_used": "1205460",
+                    "mount": "/",
+                    "mount_options": [
+                        "rw"
+                    ],
+                    "percent_used": "4%"
+                },
+                "/dev/sda1": {
+                    "fs_type": "ext4",
+                    "inodes_available": "127972",
+                    "inodes_percent_used": "1%",
+                    "inodes_used": "44",
+                    "kb_available": "408120",
+                    "kb_size": "487652",
+                    "kb_used": "53932",
+                    "mount": "/boot",
+                    "mount_options": [
+                        "rw"
+                    ],
+                    "percent_used": "12%",
+                    "total_inodes": "128016"
+                },
+                "/proc/bus/usb": {
+                    "fs_type": "usbfs",
+                    "mount": "/proc/bus/usb",
+                    "mount_options": [
+                        "rw",
+                        "relatime"
+                    ]
+                },
+                "devpts": {
+                    "fs_type": "devpts",
+                    "mount": "/dev/pts",
+                    "mount_options": [
+                        "rw",
+                        "gid=5",
+                        "mode=620"
+                    ]
+                },
+                "devtmpfs": {
+                    "fs_type": "devtmpfs",
+                    "mount": "/dev",
+                    "mount_options": [
+                        "rw",
+                        "relatime",
+                        "size=239900k",
+                        "nr_inodes=59975",
+                        "mode=755"
+                    ]
+                },
+                "none": {
+                    "fs_type": "binfmt_misc",
+                    "mount": "/proc/sys/fs/binfmt_misc",
+                    "mount_options": [
+                        "rw"
+                    ]
+                },
+                "proc": {
+                    "fs_type": "proc",
+                    "mount": "/proc",
+                    "mount_options": [
+                        "rw"
+                    ]
+                },
+                "rootfs": {
+                    "fs_type": "rootfs",
+                    "mount": "/",
+                    "mount_options": [
+                        "rw"
+                    ]
+                },
+                "sda1": {
+                    "fs_type": "ext4",
+                    "uuid": "27f52443-c8f0-4bcc-93d0-ada4cc8aa8c5"
+                },
+                "sda2": {
+                    "fs_type": "LVM2_member",
+                    "uuid": "xnFGHe-pEoA-kQZH-t330-3EXv-7GBL-hhVdJn"
+                },
+                "sysfs": {
+                    "fs_type": "sysfs",
+                    "mount": "/sys",
+                    "mount_options": [
+                        "rw"
+                    ]
+                },
+                "tmp_shared": {
+                    "fs_type": "vboxsf",
+                    "inodes_available": "1000",
+                    "inodes_percent_used": "0%",
+                    "inodes_used": "0",
+                    "kb_available": "393868272",
+                    "kb_size": "487385240",
+                    "kb_used": "93516968",
+                    "mount": "/tmp/shared",
+                    "mount_options": [
+                        "uid=500",
+                        "gid=500",
+                        "rw"
+                    ],
+                    "percent_used": "20%",
+                    "total_inodes": "1000"
+                },
+                "tmpfs": {
+                    "fs_type": "tmpfs",
+                    "inodes_available": "62769",
+                    "inodes_percent_used": "1%",
+                    "inodes_used": "1",
+                    "kb_available": "251080",
+                    "kb_size": "251080",
+                    "kb_used": "0",
+                    "mount": "/dev/shm",
+                    "mount_options": [
+                        "rw"
+                    ],
+                    "percent_used": "0%",
+                    "total_inodes": "62770"
+                },
+                "vg_vagrantcentos-lv_root": {
+                    "fs_type": "ext4",
+                    "uuid": "c2099ed2-135b-46e4-a8b1-395eff6d97b0"
+                },
+                "vg_vagrantcentos-lv_swap": {
+                    "fs_type": "swap",
+                    "uuid": "59f927a6-9a35-4f9d-a734-a50198763a79"
+                }
+            },
+            "fqdn": "default-centos-6-chef-11.vagrantup.com",
+            "hostname": "default-centos-6-chef-11",
+            "idletime": "16 seconds",
+            "idletime_seconds": 16,
+            "init_package": "init",
+            "ip6address": "fe80::a00:27ff:fe8b:d2f6",
+            "ipaddress": "10.0.2.15",
+            "kernel": {
+                "machine": "x86_64",
+                "modules": {
+                    "ata_generic": {
+                        "refcount": "0",
+                        "size": "3837"
+                    },
+                    "ata_piix": {
+                        "refcount": "2",
+                        "size": "24409"
+                    },
+                    "crc_t10dif": {
+                        "refcount": "1",
+                        "size": "1305"
+                    },
+                    "dm_log": {
+                        "refcount": "2",
+                        "size": "9930"
+                    },
+                    "dm_mirror": {
+                        "refcount": "0",
+                        "size": "14384"
+                    },
+                    "dm_mod": {
+                        "refcount": "8",
+                        "size": "95622"
+                    },
+                    "dm_region_hash": {
+                        "refcount": "1",
+                        "size": "12085"
+                    },
+                    "drm": {
+                        "refcount": "1",
+                        "size": "291284"
+                    },
+                    "e1000": {
+                        "refcount": "0",
+                        "size": "160675"
+                    },
+                    "ext4": {
+                        "refcount": "2",
+                        "size": "378476"
+                    },
+                    "i2c_core": {
+                        "refcount": "2",
+                        "size": "29964"
+                    },
+                    "i2c_piix4": {
+                        "refcount": "0",
+                        "size": "11776"
+                    },
+                    "ipv6": {
+                        "refcount": "24",
+                        "size": "334932"
+                    },
+                    "jbd2": {
+                        "refcount": "1",
+                        "size": "93427"
+                    },
+                    "mbcache": {
+                        "refcount": "1",
+                        "size": "8193"
+                    },
+                    "microcode": {
+                        "refcount": "0",
+                        "size": "112653"
+                    },
+                    "parport": {
+                        "refcount": "2",
+                        "size": "36209"
+                    },
+                    "parport_pc": {
+                        "refcount": "0",
+                        "size": "22658"
+                    },
+                    "pata_acpi": {
+                        "refcount": "0",
+                        "size": "3701"
+                    },
+                    "ppdev": {
+                        "refcount": "0",
+                        "size": "8537"
+                    },
+                    "sd_mod": {
+                        "refcount": "3",
+                        "size": "36998"
+                    },
+                    "sg": {
+                        "refcount": "0",
+                        "size": "29318"
+                    },
+                    "vboxguest": {
+                        "refcount": "2",
+                        "size": "259704"
+                    },
+                    "vboxsf": {
+                        "refcount": "1",
+                        "size": "37631"
+                    },
+                    "vboxvideo": {
+                        "refcount": "0",
+                        "size": "2148"
+                    }
+                },
+                "name": "Linux",
+                "os": "GNU/Linux",
+                "release": "2.6.32-504.1.3.el6.x86_64",
+                "version": "#1 SMP Tue Nov 11 17:57:25 UTC 2014"
+            },
+            "keys": {
+                "ssh": {
+                    "host_dsa_public": "AAAAB3NzaC1kc3MAAACBAN11aNfZN+jcr/+iXTDgjZg0J0snL/sIBK7sq3aZKTAlxZeuwATdaIvUzXwiFVI2+b2c1+PaK8g5DFR0d1LBkrheB520bT1lZCz876jDmOxX9tgCuXWe4wBUN2XhN1s3Rbai2eiIaUURZtlHwttoOMd1sk3UePcmuiVqXXTcSy4FAAAAFQCRQfpvRrWZbr4wu8aEUnptQjqiBwAAAIEA0D1IZYeCnp/81gK9z8RVnJ1AhRBN8RvBfdcJiBHjCPtfNSpl14bl/dvl6gIQa47ZQrN4mdC5XYa2mgbQo1QYdWuzY8gzeCA6csLHLIJi/P7zwPxtrimYwyF8HWqZMEi+AxzlNc+UT1QTDtT5FNGnu012z8VCzMRtwdvbo8K2IGUAAACABLCSz45+mKlBNokBGMjPcHyVRMzYInYyw3rLjyjO5uJb4ezHvR/Gp26yGJnb8WDBOGcIvEZj0AAq/wLNqmC9D1yZLhXP8enhJCOSn3JtjmMsD6JjT6pkMs2Z7GIV+qgC+Ip0iMqtMDXC75EhSp/LsZXsnNYkN8lslJBp+o7dClg=",
+                    "host_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEAsxmrghvdfnRxAw+z4CHv63wPv1FGg6XGiJjoss6g9JXQaqUS9fPWpF4kuyKjrM3iSrCzKmrlsWZVXMACNy/AbCy/YB6AcYPfBFqsJlQARmGZVvgde4JR8TQkPaGaY1pYRMqhvH1xIXV2g2Pc2faMNpi2U4G7De4E7BK9Q6rsYVOIWEQXJYUW0up/xC9chffwWm/YHZ9pM25XVP0o72lsdy/vwqXkpogwso649vTPfiRnYhTLJmc1/9oBToZo3X3SLMaC2C+yQpMjtCVBOqnqGg8ykbaQDK8NC/QOpJwqY6KnzKk25CDVg0HnvtQD+9g9slGRY75a0EHMVtjknqgzlw=="
+                }
+            },
+            "languages": {
+                "c": {
+                    "glibc": {
+                        "description": "GNU C Library stable release version 2.12, by Roland McGrath et al.",
+                        "version": "2.12"
+                    }
+                },
+                "lua": {
+                    "version": "5.1.4"
+                },
+                "perl": {
+                    "archname": "x86_64-linux-thread-multi",
+                    "version": "5.10.1"
+                },
+                "python": {
+                    "builddate": "Jan 22 2014, 09:42:36",
+                    "version": "2.6.6"
+                },
+                "ruby": {
+                    "bin_dir": "/opt/chef/embedded/bin",
+                    "gem_bin": "/opt/chef/embedded/bin/gem",
+                    "gems_dir": "/opt/chef/embedded/lib/ruby/gems/1.9.1",
+                    "host": "x86_64-unknown-linux-gnu",
+                    "host_cpu": "x86_64",
+                    "host_os": "linux-gnu",
+                    "host_vendor": "unknown",
+                    "platform": "x86_64-linux",
+                    "release_date": "2014-05-14",
+                    "ruby_bin": "/opt/chef/embedded/bin/ruby",
+                    "target": "x86_64-unknown-linux-gnu",
+                    "target_cpu": "x86_64",
+                    "target_os": "linux",
+                    "target_vendor": "unknown",
+                    "version": "1.9.3"
+                }
+            },
+            "lsb": {},
+            "macaddress": "08:00:27:8B:D2:F6",
+            "machinename": "default-centos-6-chef-11.vagrantup.com",
+            "memory": {
+                "active": "94220kB",
+                "anon_pages": "72576kB",
+                "bounce": "0kB",
+                "buffers": "11864kB",
+                "cached": "63028kB",
+                "commit_limit": "1266884kB",
+                "committed_as": "205160kB",
+                "dirty": "1860kB",
+                "free": "310952kB",
+                "inactive": "53268kB",
+                "mapped": "12520kB",
+                "nfs_unstable": "0kB",
+                "page_tables": "2704kB",
+                "slab": "31316kB",
+                "slab_reclaimable": "11332kB",
+                "slab_unreclaim": "19984kB",
+                "swap": {
+                    "cached": "0kB",
+                    "free": "1015804kB",
+                    "total": "1015804kB"
+                },
+                "total": "502160kB",
+                "vmalloc_chunk": "34359707640kB",
+                "vmalloc_total": "34359738367kB",
+                "vmalloc_used": "20352kB",
+                "writeback": "0kB"
+            },
+            "network": {
+                "default_gateway": "10.0.2.2",
+                "default_interface": "eth0",
+                "interfaces": {
+                    "eth0": {
+                        "addresses": {
+                            "08:00:27:8B:D2:F6": {
+                                "family": "lladdr"
+                            },
+                            "10.0.2.15": {
+                                "broadcast": "10.0.2.255",
+                                "family": "inet",
+                                "netmask": "255.255.255.0",
+                                "prefixlen": "24",
+                                "scope": "Global"
+                            },
+                            "fe80::a00:27ff:fe8b:d2f6": {
+                                "family": "inet6",
+                                "prefixlen": "64",
+                                "scope": "Link"
+                            }
+                        },
+                        "arp": {
+                            "10.0.2.2": "52:54:00:12:35:02"
+                        },
+                        "encapsulation": "Ethernet",
+                        "flags": [
+                            "BROADCAST",
+                            "MULTICAST",
+                            "UP",
+                            "LOWER_UP"
+                        ],
+                        "mtu": "1500",
+                        "number": "0",
+                        "routes": [
+                            {
+                                "destination": "10.0.2.0/24",
+                                "family": "inet",
+                                "proto": "kernel",
+                                "scope": "link",
+                                "src": "10.0.2.15"
+                            },
+                            {
+                                "destination": "169.254.0.0/16",
+                                "family": "inet",
+                                "metric": "1002",
+                                "scope": "link"
+                            },
+                            {
+                                "destination": "default",
+                                "family": "inet",
+                                "via": "10.0.2.2"
+                            },
+                            {
+                                "destination": "fe80::/64",
+                                "family": "inet6",
+                                "metric": "256",
+                                "proto": "kernel"
+                            }
+                        ],
+                        "state": "up",
+                        "type": "eth"
+                    },
+                    "lo": {
+                        "addresses": {
+                            "127.0.0.1": {
+                                "family": "inet",
+                                "netmask": "255.0.0.0",
+                                "prefixlen": "8",
+                                "scope": "Node"
+                            },
+                            "::1": {
+                                "family": "inet6",
+                                "prefixlen": "128",
+                                "scope": "Node"
+                            }
+                        },
+                        "encapsulation": "Loopback",
+                        "flags": [
+                            "LOOPBACK",
+                            "UP",
+                            "LOWER_UP"
+                        ],
+                        "mtu": "65536",
+                        "routes": [
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            },
+                            {
+                                "destination": "unreachable",
+                                "family": "inet6",
+                                "metric": "1024"
+                            }
+                        ],
+                        "state": "unknown"
+                    }
+                }
+            },
+            "ohai_time": 1423515881.968213,
+            "os": "linux",
+            "os_version": "2.6.32-504.1.3.el6.x86_64",
+            "platform": "centos",
+            "platform_family": "rhel",
+            "platform_version": "6.6",
+            "recipes": [
+                "chef_handler_example::default",
+                "chef_handler::default"
+            ],
+            "roles": [],
+            "root_group": "root",
+            "uptime": "23 seconds",
+            "uptime_seconds": 23,
+            "virtualization": {
+                "role": "guest",
+                "system": "vbox",
+                "systems": {
+                    "vbox": "guest"
+                }
+            }
+        },
+        "chef_environment": "_default",
+        "chef_type": "node",
+        "default": {
+            "chef_handler": {
+                "handler_path": "/tmp/kitchen/handlers"
+            }
+        },
+        "json_class": "Chef::Node",
+        "name": "default-centos-6-chef-11",
+        "normal": {
+            "tags": []
+        },
+        "override": {},
+        "run_list": [
+            "recipe[chef_handler_example::default]"
+        ]
+    },
+    "run_id": "29a45c5d-38e6-419b-88e0-2725609bbf27",
+    "start_time": "2015-02-09 21:04:42 +0000",
+    "success": false,
+    "updated_resources": [
+        {
+            "instance_vars": {
+                "action": [
+                    "nothing"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "create",
+                    "delete",
+                    "create",
+                    "create_if_missing",
+                    "delete"
+                ],
+                "before": null,
+                "cookbook": null,
+                "cookbook_name": "chef_handler",
+                "delete": false,
+                "elapsed_time": 0.000257598,
+                "files_backup": 5,
+                "files_group": null,
+                "files_mode": 420,
+                "files_owner": null,
+                "group": "root",
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "mode": "0755",
+                "name": "/tmp/kitchen/handlers",
+                "noop": null,
+                "overwrite": true,
+                "owner": "root",
+                "params": {},
+                "path": "/tmp/kitchen/handlers",
+                "provider": "Chef::Provider::RemoteDirectory",
+                "purge": false,
+                "recipe_name": "default",
+                "recursive": true,
+                "resource_name": "remote_directory",
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "handlers",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler/recipes/default.rb:23:in `from_file'",
+                "supports": {},
+                "updated": true,
+                "updated_by_last_action": false
+            },
+            "json_class": "Chef::Resource::RemoteDirectory"
+        },
+        {
+            "instance_vars": {
+                "action": [
+                    "install"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "install",
+                    "upgrade",
+                    "remove",
+                    "purge",
+                    "reconfig"
+                ],
+                "before": null,
+                "candidate_version": null,
+                "cookbook_name": "chef_handler_example",
+                "elapsed_time": 0.019543914,
+                "gem_binary": "/opt/chef/embedded/bin/gem",
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "name": "chef-handler-example",
+                "noop": null,
+                "options": null,
+                "package_name": "chef-handler-example",
+                "params": {},
+                "provider": "Chef::Provider::Package::Rubygems",
+                "recipe_name": "default",
+                "resource_name": "chef_gem",
+                "response_file": null,
+                "response_file_variables": {},
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "/tmp/shared/chef-handler-example-0.0.1.gem",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler_example/recipes/default.rb:12:in `from_file'",
+                "supports": {},
+                "timeout": 900,
+                "updated": true,
+                "updated_by_last_action": false,
+                "version": "0.0.1"
+            },
+            "json_class": "Chef::Resource::ChefGem"
+        },
+        {
+            "instance_vars": {
+                "action": [
+                    "enable"
+                ],
+                "allowed_actions": [
+                    "nothing",
+                    "enable",
+                    "disable"
+                ],
+                "arguments": [],
+                "before": null,
+                "class_name": "Chef::Handler::example",
+                "cookbook_name": "chef_handler_example",
+                "elapsed_time": 0.020074013,
+                "guard_interpreter": "default",
+                "ignore_failure": false,
+                "name": "Chef::Handler::example",
+                "noop": null,
+                "params": {},
+                "provider": null,
+                "recipe_name": "default",
+                "resource_name": "chef_handler",
+                "retries": 0,
+                "retry_delay": 2,
+                "sensitive": false,
+                "source": "chef/handler/example.rb",
+                "source_line": "/tmp/kitchen/cache/cookbooks/chef_handler_example/recipes/default.rb:23:in `from_file'",
+                "supports": {
+                    "exception": true,
+                    "report": true
+                },
+                "updated": true,
+                "updated_by_last_action": true
+            },
+            "json_class": "Chef::Resource::ChefHandler"
+        }
+    ]
+}
